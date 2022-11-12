@@ -1,0 +1,47 @@
+[
+   
+
+   {
+    "id":1,
+    "name":"vapha pitha",
+    "price":10,
+    "description":"lorem25",
+    "img":"https://i.ibb.co/Z84vN99/img1.png"
+   },
+   {
+    "id":2,
+    "name":"vapha pitha",
+    "price":10,
+    "description":"lorem25",
+    "img":"https://i.ibb.co/Z84vN99/img1.png"
+   },
+   {
+    "id":3,
+    "name":"vapha pitha",
+    "price":10,
+    "description":"lorem25",
+    "img":"https://i.ibb.co/Z84vN99/img1.png"
+   },
+   {
+    "id":4,
+    "name":"vapha pitha",
+    "price":10,
+    "description":"lorem25",
+    "img":"https://i.ibb.co/Z84vN99/img1.png"
+   },
+   {
+    "id":5,
+    "name":"vapha pitha",
+    "price":10,
+    "description":"lorem25",
+    "img":"https://i.ibb.co/Z84vN99/img1.png"
+   },
+   {
+    "id":6,
+    "name":"vapha pitha",
+    "price":10,
+    "description":"lorem25",
+    "img":"https://i.ibb.co/Z84vN99/img1.png"
+   }
+  
+]
