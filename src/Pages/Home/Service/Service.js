@@ -1,15 +1,19 @@
 import React from 'react';
+import './Service.css';
 
-const Service = (props) => {
-    const{img,name,price,description}=props.service;
+const Service = ({ service }) => {
+    const { img, name, price, description } = service;
     return (
-        <div>
-            <img src={img} alt="" />
-            <h3>service : {name}</h3>
+        <div className='service-container'>
+            <img style={{ width: '385px', height: '385px' }} src={img} alt="" />
+            <h3>Name : {name}</h3>
             <p>price : {price}</p>
             <p>description : {description}</p>
+            <button>Choose First : {name}</button>
+
         </div>
     );
 };
 
 export default Service;
+
