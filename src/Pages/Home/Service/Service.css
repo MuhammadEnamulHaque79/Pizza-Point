@@ -10,18 +10,19 @@
 .service-container img{
     border: 1px solid lightpink;
     border-radius: 15px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    /* margin-right: 5px; */
     box-sizing: border-box;
+    padding: 5px;
 }
 
 .service-container button{
-    background-color:gainsboro;
-    border-radius: 5px;
+    background-color:lightcoral;
+    border-radius: 5px solid orange;
     border: none;
     margin-bottom: 10px;
-    /* color:white; */
-    color: black;
+    color:white;
+    /* color: black; */
 }
    
