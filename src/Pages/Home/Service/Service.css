@@ -13,10 +13,10 @@
     border-radius: 15px;
     margin-top: 15px;
     margin-left: 15px;
-    /* margin-right: 5px; */
     box-sizing: border-box;
     padding: 5px;
 }
+    
 
 .service-container button{
     background-color:lightcoral;
@@ -24,6 +24,6 @@
     border: none;
     margin-bottom: 10px;
     color:white;
-    /* color: black; */
 }
+    
    

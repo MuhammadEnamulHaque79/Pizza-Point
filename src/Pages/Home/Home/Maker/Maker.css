@@ -1,0 +1,25 @@
+.maker-container{
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin-right: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.maker-container img{
+    border: 1px solid lightpink;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.maker-container button{
+    background-color:lightcoral;
+    border-radius: 5px solid orange;
+    border: none;
+    margin-bottom: 10px;
+    color:white;
+}
