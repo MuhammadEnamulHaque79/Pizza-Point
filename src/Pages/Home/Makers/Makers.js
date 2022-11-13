@@ -19,11 +19,10 @@ const makers=[
 ]
 
 const Makers = () => {
-   
 
     return (
         <div>
-            <h2 className='text-primary text-center mt-3'>Our Cake Makers</h2>
+            <h2 className='text-center mt-3'>Our Cake Makers</h2>
             <div className="makers-container">
                 {
                    makers.map(maker =><Maker
@@ -38,3 +37,4 @@ const Makers = () => {
 };
 
 export default Makers;
+   
