@@ -21,8 +21,8 @@ const makers=[
 const Makers = () => {
 
     return (
-        <div>
-            <h2 className='text-center mt-3'>Our Cake Makers</h2>
+        <div id="makers">
+            <h2 className='text-center mt-2 text-primary'>Our Pizza Makers</h2>
             <div className="makers-container">
                 {
                    makers.map(maker =><Maker

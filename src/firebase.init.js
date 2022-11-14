@@ -6,12 +6,12 @@ import {getAuth} from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyARU2liSZreIV0I1v2Tnc_QWjlmlV1CrXU",
-  authDomain: "pitha-service.firebaseapp.com",
-  projectId: "pitha-service",
-  storageBucket: "pitha-service.appspot.com",
-  messagingSenderId: "247207938509",
-  appId: "1:247207938509:web:4ef7396d946e9aca785c84"
+  apiKey:process.env.REACT_APP_apiKey,
+  authDomain:process.env.REACT_APP_authDomain,
+  projectId:process.env.REACT_APP_projectId,
+  storageBucket:process.env.REACT_APP_storageBucket,
+  messagingSenderId:process.env.REACT_APP_messagingSenderId,
+  appId:process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
