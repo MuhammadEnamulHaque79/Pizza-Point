@@ -6,12 +6,12 @@ import {getAuth} from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:process.env.REACT_APP_apiKey,
-  authDomain:process.env.REACT_APP_authDomain,
-  projectId:process.env.REACT_APP_projectId,
-  storageBucket:process.env.REACT_APP_storageBucket,
-  messagingSenderId:process.env.REACT_APP_messagingSenderId,
-  appId:process.env.REACT_APP_appId,
+  apiKey: "AIzaSyAWsT5sgtMGwQKz8n11ch23VQW8uDd9az0",
+  authDomain: "pizza-point-95a08.firebaseapp.com",
+  projectId: "pizza-point-95a08",
+  storageBucket: "pizza-point-95a08.appspot.com",
+  messagingSenderId: "202441377608",
+  appId: "1:202441377608:web:42339a3e63b7fdf110d57d"
 };
 
 // Initialize Firebase
