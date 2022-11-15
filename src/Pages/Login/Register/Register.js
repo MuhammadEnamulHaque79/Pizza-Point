@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
@@ -6,7 +6,7 @@ import './Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
-
+    const[agree,setAgree]=useState(false);
     const [
         createUserWithEmailAndPassword
         // user,
@@ -14,12 +14,12 @@ const Register = () => {
         // error,
       ] = useCreateUserWithEmailAndPassword(auth);
 
-      
-      
       const navigate = useNavigate();
       const navigateToLogin = () => {
           navigate('/login');
       }
+
+      
     const handleRegister = (event) => {
         event.preventDefault();
     // const name=event.target.name.value;
@@ -27,10 +27,12 @@ const Register = () => {
     const password=event.target.password.value;
     createUserWithEmailAndPassword(email, password);
     console.log(email,password);
+    if(agree){
+        createUserWithEmailAndPassword(email, password);
+      };
+    };
 
-
-
-    }
+    
 
     return (
         <div className='register-form'>
@@ -39,7 +41,11 @@ const Register = () => {
                 <input type="text" name="name" id="" placeholder='Name' />
                 <input type="email" name="email" id="" placeholder='Enter email' required />
                 <input type="password" name="password" id="" placeholder='Password' required />
-                <input className='btn btn-primary w-50 d-block mx-auto text-white' type="submit" value="Register" />
+                <input onClick={()=>setAgree(!agree)} type="checkbox" name="terms" id="terms" />
+                <label className={`${agree ? 'text-primary': 'text-danger'}`} style={{marginLeft:'10px',marginTop:'3px'}} htmlFor="terms and conditions">Accept Pizza Point's terms and conditions</label>
+                <input 
+                disabled={(!agree)}
+                className='btn btn-primary w-50 d-block mx-auto text-white mt-2' type="submit" value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='text-primary text-decoration-none' onClick={navigateToLogin}>Please Login</Link> </p>
             <SocialLogin></SocialLogin>

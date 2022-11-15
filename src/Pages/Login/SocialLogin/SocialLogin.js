@@ -44,16 +44,16 @@ const SocialLogin = () => {
 
                 <button
                     onClick={() => signInWithGithub()}
-                    style={{ borderRadius: '8px' }} className='btn btn-info w-50 d-block mx-auto mb-2'>
+                    style={{ borderRadius: '8px' }} className='btn btn-primary w-50 d-block mx-auto mb-2'>
                     <img src={github} alt="" />
-                    <span className='mx-2'>CONTINUE WITH GITHUB</span>
+                    <span className='mx-2 text-white'>CONTINUE WITH GITHUB</span>
                 </button>
 
                 <button
                     onClick={() => signInWithFacebook()}
                     style={{ borderRadius: '8px' }} className='btn btn-secondary w-50 d-block mx-auto'>
                     <img src={facebook} alt="" />
-                    <span className='mx-2'>CONTINUE WITH FACEBOOK</span>
+                    <span className='mx-2  text-white'>CONTINUE WITH FACEBOOK</span>
                 </button>
             </div>
 
