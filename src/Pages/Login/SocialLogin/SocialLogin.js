@@ -18,15 +18,8 @@ const SocialLogin = () => {
     const navigate = useNavigate();
     let errorElement;
     if (error || error1 || error2) {
-        errorElement = <div>
-            <p className='text-danger'>Error: {error?.message} {error1?.message} {error2?.message}</p>
-        </div>
-
+        errorElement = <p className='text-danger'>Error: {error?.message} {error1?.message} {error2?.message}</p>
     };
-
-    // if (loading) {
-    //     return <p>Loading...</p>;
-    // };
 
     if (user || user1 || user2) {
         navigate('/home');
@@ -57,7 +50,7 @@ const SocialLogin = () => {
                 </button>
 
                 <button
-                    onClick={()=>signInWithFacebook()}
+                    onClick={() => signInWithFacebook()}
                     style={{ borderRadius: '8px' }} className='btn btn-secondary w-50 d-block mx-auto'>
                     <img src={facebook} alt="" />
                     <span className='mx-2'>CONTINUE WITH FACEBOOK</span>
