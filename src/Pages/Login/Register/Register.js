@@ -7,6 +7,7 @@ import {
 import './Register.css';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -29,6 +30,9 @@ const Register = () => {
         console.log('user',user);
     }
 
+    if(loading){
+        return <Loading></Loading>
+    }
     const handleRegister = async(event) => {
         event.preventDefault();
         const name = event.target.name.value;

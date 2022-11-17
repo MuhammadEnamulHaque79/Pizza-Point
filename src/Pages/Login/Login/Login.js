@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, ButtonToolbar, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
     useSendPasswordResetEmail,
@@ -7,13 +7,16 @@ import {
 } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
     const [
         signInWithEmailAndPassword,
-        user
-        // loading,
+        user,
+        loading,
         // error,
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
@@ -33,10 +36,19 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
-    const resetPassword = async() => {
+    if (loading) {
+        return <Loading></Loading>
+    }
+
+    const resetPassword = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            // alert('Sent email');
+            toast('Sent email');
+        }else{
+            toast('Enter your email address,please');
+        }
     };
 
     const handleSubmit = (event) => {
@@ -71,8 +83,9 @@ const Login = () => {
                 </Button>
             </Form>
             <p>New to Pizza Point? <Link to="/register" className='text-primary text-decoration-none' onClick={navigateToRegister}>Please Register</Link></p>
-            <p>Forget Password? <Link to="/register" className='text-primary text-decoration-none' onClick={resetPassword}>Reset Password</Link></p>
+            <p>Forget Password? <button className='btn btn-link text-primary text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
             <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
     );
 };

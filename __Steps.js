@@ -27,10 +27,10 @@ writing must be change when you submit or provide revision;
 */
 
 /*
-
-1.npm install -g firebase-tools
-2.firebase login
-3.firebase init
-4.firebase run build
-5.firebase deploy
+//firebase hosting steps;
+1.npm install -g firebase-tools/just one time on a pc;
+2.firebase login/just one time on a pc;
+3.firebase init/every time each project;
+4.npm run build/every time each project;
+5.firebase deploy/every time each projec;
  */

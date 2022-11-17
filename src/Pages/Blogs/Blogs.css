@@ -1,0 +1,40 @@
+.blogs-container{
+    margin: 3px;
+}
+
+.blogs-container1{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom:15px;
+}
+
+.blogs-container1 p{
+    text-align: justify;
+}
+
+.blogs-container2{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom:15px;
+}
+
+.blogs-container2 p{
+    text-align: justify;
+}
+
+.blogs-container3{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom:15px;
+
+}
+
+.blogs-container3 p{
+    text-align: justify;
+}
