@@ -12,9 +12,9 @@ const Service = ({ service }) => {
         <div className='service-container'>
             
             <img style={{ width: '400px', height: '385px' }} src={img} alt="" />
-            <h3>Name : {name}</h3>
-            <p>price : {price}</p>
-            <p>description : {description}</p>
+            <h3>{name}</h3>
+            <p>${price}</p>
+            <p>{description}</p>
             <button onClick={()=>navigateToServiceDetail(id)}>Booking : {name}</button>
 
         </div>

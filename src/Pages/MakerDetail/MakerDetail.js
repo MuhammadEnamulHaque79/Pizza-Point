@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-const ServiceDetail = () => {
-    const { serviceId} = useParams();
+const MakerDetail = () => {
+    const{makerId}=useParams();
     return (
         <div>
-            <h3>Detail of service :{serviceId}</h3>
-            
+            <h3>Maker detail:{makerId}</h3>
             <div className='text-center'>
                 <Link to="/checkout">
                     <button className='btn btn-primary'>Checkout Procceed</button>
@@ -16,4 +15,4 @@ const ServiceDetail = () => {
     );
 };
 
-export default ServiceDetail;
+export default MakerDetail;

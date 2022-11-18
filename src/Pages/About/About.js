@@ -12,6 +12,7 @@ const About = () => {
                 {
                     targets.map(target =>
                         <div className='text-center'>
+                            key={target.id}
                             <img src={target.img} alt="" />
                             <p style={{ textAlign: 'justify', marginLeft: '10px' }}>{target.goal}</p>
                             <h4 className='mb-3'>{target.name}</h4>
