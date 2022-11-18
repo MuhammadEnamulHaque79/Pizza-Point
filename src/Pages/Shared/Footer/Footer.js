@@ -1,12 +1,13 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
 const today = new Date();
 const year = today.getFullYear();
 
     return (
-        <footer>
-            <p className='text-center'><small>&copy; {year}</small></p>
+        <footer className='footer-container'>
+            <p className='text-center'>Copyright<span className='font-monospace'>&copy;{year}</span> Pizza Point</p>
         </footer>
     );
 };

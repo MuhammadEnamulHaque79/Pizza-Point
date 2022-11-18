@@ -1,0 +1,16 @@
+.container-lazy{
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container-lazy img{
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 500px;
+}
+    
