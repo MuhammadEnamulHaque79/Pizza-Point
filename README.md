@@ -1,7 +1,8 @@
 <!-- # Getting Started with Create React App -->
 # Pizza Point
-* Pizza Point
-* Pizza Point
+## view links:
+* Github repository:
+* Live website link:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
