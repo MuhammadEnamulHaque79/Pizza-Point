@@ -9,7 +9,7 @@ const Maker = ({ maker }) => {
         <div className='maker-container'>
             <img style={{ width: '400px', height: '385px' }} src={img} alt="" />
             <h3>{name}</h3>
-            <p>{description}</p>
+            <p style={{textAlign:'justify',marginRight:'5px',marginLeft:'5px'}}>{description}</p>
             <button>Booking : {name}</button>
 
 

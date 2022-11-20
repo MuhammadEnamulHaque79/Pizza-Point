@@ -14,7 +14,7 @@ const Service = ({ service }) => {
             <img style={{ width: '400px', height: '385px' }} src={img} alt="" />
             <h3>{name}</h3>
             <p>${price}</p>
-            <p>{description}</p>
+            <p style={{textAlign:'justify',marginRight:'5px',marginLeft:'5px'}}>{description}</p>
             <button onClick={()=>navigateToServiceDetail(id)}>Booking : {name}</button>
 
         </div>
