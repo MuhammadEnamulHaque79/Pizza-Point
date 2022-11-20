@@ -1,24 +1,24 @@
 <!-- # Getting Started with Create React App -->
 # Pizza Point
-## Pizza Point
-## Pizza Point
+* Pizza Point
+* Pizza Point
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <!-- ## Available Scripts -->
 ## Features:
-### Services
-### Makers
-### Blogs
-### About
-### Login
-### 404
+* Services
+* Makers
+* Blogs
+* About
+* Login
+* 404
 
 ## Features:
-### React,
-### Bootstrap,
-### Reactbootstrap,
-### react-firebase-hooks.
+* React
+* Bootstrap
+* Reactbootstrap
+* react-firebase-hooks
 
 
 In the project directory, you can run:
