@@ -2,6 +2,8 @@
 # Pizza Point
 ## view links:
 * Github repository:
+https://github.com/MuhammadEnamulHaque79/Pizza-Point
+
 * Live website link:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
