@@ -32,7 +32,7 @@ const Login = () => {
     }
 
     if (user) {
-        // navigate('/home');
+       
         navigate(from, { replace: true });
     }
 
@@ -44,8 +44,8 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            // alert('Sent email');
             toast('Sent email');
+            
         }else{
             toast('Enter your email address,please');
         }
@@ -75,9 +75,7 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                {/* <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group> */}
+                
                 <Button variant="primary w-50 mx-auto d-block my-2" type="submit">
                     Login
                 </Button>

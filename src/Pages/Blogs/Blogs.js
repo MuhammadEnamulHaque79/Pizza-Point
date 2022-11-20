@@ -32,19 +32,28 @@ const Blogs = () => {
                 <h5>13.3 What other services does firebase provide other than authentication?</h5>
                 <p style={{ marginLeft: '15px' }}><i class="fa-solid fa-pen-to-square"></i>
                     There are many services which Firebase provides, Most useful of them are:
-                    Cloud Firestore.
-                    Cloud Functions.
-                    Authentication.
-                    Hosting.
-                    Cloud Storage.
-                    Google Analytics.
-                    Predictions.
-                    Cloud Messaging.
+                    <ul>
+                        <li>Cloud Firestore.</li>
+                        <li>Cloud Functions.</li>
+                        <li>Authentication.</li>
+                        <li>Hosting.</li>
+                        <li>Cloud Storage.</li>
+                        <li>Google Analytics.</li>
+                        <li>Predictions.</li>
+                        <li> Cloud Messaging.</li>
+                    </ul>
+                    
                 </p>
-
+                    
             </div>
         </div>
     );
 };
 
 export default Blogs;
+                    
+                    
+                    
+                    
+                    
+                   

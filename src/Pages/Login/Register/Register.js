@@ -33,27 +33,18 @@ const Register = () => {
     if(loading){
         return <Loading></Loading>
     }
+
     const handleRegister = async(event) => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-
-        // const agree=event.target.terms.checked;
-     
-
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName:name});
-        // alert('Updated profile');
-        console.log('Updated profile');
         navigate('/home');
-     
-        
-
     };
 
-
-
+       
     return (
         <div className='register-form'>
             <h3 className='text-center text-primary mt-2'>Please Register</h3>

@@ -22,7 +22,7 @@ const Makers = () => {
 
     return (
         <div id="makers">
-            <h2 className='text-center mt-2 text-primary'>Our Pizza Makers</h2>
+            <h2 className='text-center mt-2 text-secondary'>Our Pizza Makers</h2>
             <div className="makers-container">
                 {
                    makers.map(maker =><Maker
